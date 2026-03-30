@@ -1,12 +1,31 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
-node_modules/
-dist/
+*.pyo
 .env
-.env.*
-!.env.example
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
+
+# Secrets (never commit these)
+backend/.env
+*.env
+
+# DB
+*.db
+*.sqlite3
+
+# IDEs
 .vscode/
 .idea/
+
+# OS
 .DS_Store
-*.log
+*.swp
